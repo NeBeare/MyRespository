@@ -1,0 +1,32 @@
+public class DingDongClass {
+    public static void displayInputs(){
+        
+        //create a list of numbers
+        List<Integer> inputs = new List<Integer>();
+    	inputs.add(12);
+        inputs.add(20);
+        inputs.add(30);
+        inputs.add(17);
+        
+        //loop through all numbers in list
+        for(Integer input : inputs){
+        
+        //if number is divisible by 3 and 5, display 'dingdong'
+        if(Math.Mod(input,3)==0 && Math.Mod(input,5)==0){
+        system.debug('dingdong');
+        }
+         //if number is divisible by 3  display 'ding '
+            else if(Math.Mod(input,3)==0){
+                system.debug('Ding');
+            }
+          //if number is divisible by 5  display 'dong '   
+            else if(Math.Mod(input,5)==0){
+                System.debug('Dong');
+          //if number does not meet above critera, display number.
+            }
+            else{
+                system.debug(input);
+            }
+        }
+    }
+ }
